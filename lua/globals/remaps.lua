@@ -14,3 +14,6 @@ vim.api.nvim_set_keymap('i', 'jk', '<esc>', options)
 
 -- open fzf
 vim.api.nvim_set_keymap('n', '<leader>ff', ':Telescope find_files<CR>', options)
+
+-- code quickfix
+vim.api.nvim_set_keymap('n', 'ga', ':lua vim.lsp.buf.code_action()<CR>', options)
